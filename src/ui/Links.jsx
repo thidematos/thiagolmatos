@@ -6,7 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Links() {
-  const className = `text-slate-300 text-3xl drop-shadow`;
+  const className = `text-slate-300 text-3xl drop-shadow lg:text-4xl`;
 
   return (
     <div className="flex flex-row items-center justify-start gap-6 py-6">

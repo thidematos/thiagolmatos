@@ -16,14 +16,14 @@ function About() {
   return (
     <section className="space-y-3">
       <Title isArticle="isArticle">Sobre</Title>
-      <Paragraph fontSize={"14px"}>
+      <Paragraph fontSize={"text-[14px] lg:text-base"}>
         Tenho 24 anos. Sou licenciado em História para Universidade Federal de
         Ouro Preto. Cheguei a entrar no mestrado e atuar como Pesquisador, mas
         acabei optando por seguir um caminho diferente. E esse caminho me trouxe
         ao bacharelado de Sistemas de Informação, que estou cursando na
         Universidade Federal de Itajubá (UNIFEI).
       </Paragraph>
-      <Paragraph fontSize={"14px"}>
+      <Paragraph fontSize={"text-[14px] lg:text-base"}>
         O que me motivou a fazer essa transição radical de carreiras é a minha
         afinidade muito grande com tecnologia – que foi minha principal aliada
         na época de historiador. Sempre gostei de elaborar grandes bancos de

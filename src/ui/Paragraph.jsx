@@ -1,8 +1,7 @@
 function Paragraph({ children, fontSize }) {
   return (
     <p
-      style={{ fontSize: fontSize }}
-      className="font-inter text-slate-400 drop-shadow-lg"
+      className={`${fontSize ? fontSize : ""} font-inter text-slate-400 drop-shadow-lg`}
     >
       {children}
     </p>

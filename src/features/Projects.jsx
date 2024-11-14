@@ -32,10 +32,10 @@ function ProjectBlock({ title, img, description }) {
     <div className="flex flex-col items-start justify-center gap-4 py-8">
       <Title isArticle="isArticle">{title}</Title>
       <img
-        className="self-center rounded-lg border border-emerald-500/30 shadow-xl"
+        className="self-center rounded-lg border border-emerald-500/30 shadow-xl lg:w-[60%]"
         src={`/${img}`}
       />
-      <Paragraph fontSize={"14px"}>{description}</Paragraph>
+      <Paragraph fontSize={"text-[14px]"}>{description}</Paragraph>
       {title === "The Map of Me" && (
         <button
           className="self-center rounded border border-purple-600/40 bg-cyan-950/80 px-4 py-2 text-emerald-300 shadow-xl"

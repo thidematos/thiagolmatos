@@ -1,8 +1,11 @@
+import { useUI } from "../context/UIProvider";
 import Paragraph from "../ui/Paragraph";
 import Tags from "../ui/Tags";
 import Title from "../ui/Title";
 
 function Experience() {
+  const { isDesktop } = useUI();
+
   return (
     <section>
       <Title isArticle="isArticle">Experiência</Title>
@@ -19,7 +22,7 @@ function Experience() {
         skills={["Javascript", "Web Design", "React", "Node", "MongoDB", "AWS"]}
         timeOfWork={"2023 # 2024"}
         place={"Marmoraria O Coliseu"}
-        img={"coliseu.png"}
+        img={isDesktop ? "coliseu2.png" : "coliseu.png"}
         description={
           "Desenvolvemos e implantamos o portfólio digital e um sistema de gestão de conteúdo (CMS) personalizado para Marmoraria O Coliseu, criando uma identidade visual única e uma interface intuitiva para apresentar os projetos da empresa. Construído com React (utilizando Redux e React Router Data Loaders), TailwindCSS, Node.js e MongoDB."
         }
@@ -35,10 +38,10 @@ function ExperienceBlock({ img, skills, timeOfWork, place, description }) {
       <Title isArticle="isArticle">{place}</Title>
       <img
         src={`/${img}`}
-        className="self-center rounded-lg border border-emerald-500/30 shadow-xl"
+        className="self-center rounded-lg border border-emerald-500/30 shadow-xl lg:w-[70%]"
       />
       <ul>
-        <Paragraph fontSize={"14px"}>{description}</Paragraph>
+        <Paragraph fontSize={"text-[14px]"}>{description}</Paragraph>
       </ul>
       <div className="flex flex-row flex-wrap items-center justify-center gap-x-3 gap-y-2">
         {skills.map((skill) => (

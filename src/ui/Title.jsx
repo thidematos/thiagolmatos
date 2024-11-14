@@ -5,9 +5,9 @@ function Title({
   isTitle = false,
 }) {
   const styles = {
-    isSubtitle: `text-lg font-medium tracking-wide`,
-    isArticle: `font-medium uppercase tracking-wide`,
-    isTitle: `text-3xl font-bold tracking-tight`,
+    isSubtitle: `text-lg lg:text-xl font-medium tracking-wide`,
+    isArticle: `font-medium lg:text-lg uppercase tracking-wide`,
+    isTitle: `text-3xl lg:text-4xl font-bold tracking-tight`,
   };
 
   return (
