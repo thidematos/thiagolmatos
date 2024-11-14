@@ -7,3 +7,30 @@
 .markup {
   @apply border border-red-500;
 }
+
+.centerXY {
+  left: 50%; /* relative to nearest positioned ancestor or body element */
+  top: 50%; /*  relative to nearest positioned ancestor or body element */
+  transform: translate(-50%, -50%); /* relative to element's height & width */
+}
+
+.centerX {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-gray-400;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-200;
+}
