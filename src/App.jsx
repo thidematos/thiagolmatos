@@ -2,6 +2,7 @@ import { useState } from "react";
 import Luminous from "./ui/Luminous";
 import Header from "./ui/Header";
 import About from "./features/About";
+import Experience from "./features/Experience";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,6 +12,7 @@ function App() {
       <Luminous />
       <Header />
       <About />
+      <Experience />
     </main>
   );
 }

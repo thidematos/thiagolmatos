@@ -27,6 +27,15 @@ function ListItem({ children }) {
   );
 }
 
+function TimeOfWork({ children }) {
+  return (
+    <h4 className="text-xs font-bold uppercase tracking-wide text-slate-400/80 drop-shadow">
+      {children}
+    </h4>
+  );
+}
+
 Title.ListItem = ListItem;
+Title.TimeOfWork = TimeOfWork;
 
 export default Title;
