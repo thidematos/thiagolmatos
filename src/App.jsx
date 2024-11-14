@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <main className="flex min-h-screen w-screen flex-col items-start justify-start gap-16 bg-slate-900 px-6 py-12">
+    <main className="font-inter flex min-h-screen w-screen flex-col items-start justify-start gap-16 bg-slate-900 px-6 py-12">
       <Luminous />
       <Header />
       <About />

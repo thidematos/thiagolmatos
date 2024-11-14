@@ -19,4 +19,14 @@ function Title({
   );
 }
 
+function ListItem({ children }) {
+  return (
+    <li className="text-sm tracking-wide text-slate-300 drop-shadow-md">
+      {children}
+    </li>
+  );
+}
+
+Title.ListItem = ListItem;
+
 export default Title;
