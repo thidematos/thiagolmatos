@@ -24,14 +24,14 @@ function Puzzle() {
     <div className="flex flex-col items-center justify-center gap-3 px-4 py-20">
       {isDone ? (
         <div className="flex flex-col items-center justify-center gap-6">
-          <p className="text-xl uppercase text-gray-300">
+          <p className="text-lg uppercase text-gray-300">
             Você completou o desafio!
           </p>
           <img
             src="/congratulations.png"
-            className="w-[50%] rounded-lg border border-emerald-600 shadow"
+            className="w-[60%] rounded-lg border border-emerald-600 shadow"
           />
-          <p className="text-2xl uppercase text-gray-300">
+          <p className="text-xl uppercase text-gray-300">
             PAU NA MÁQUINA! 🚀🚀🚀
           </p>
         </div>
