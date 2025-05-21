@@ -9,7 +9,7 @@ function Header() {
   return (
     <header className="flex w-full flex-col items-start justify-center gap-3 lg:col-span-1 lg:justify-start lg:py-[10%]">
       <Title isTitle="isTitle">Thiago L. Matos</Title>
-      <Title isSubtitle="isSubtitle">Trainee Asimov Jr.</Title>
+      <Title isSubtitle="isSubtitle">Desenvolvedor Mobile - Asimov Jr.</Title>
       <Paragraph fontSize={"text-[16px]"}>
         Apps que impulsionam seus resultados com soluções personalizadas
       </Paragraph>
